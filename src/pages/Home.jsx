@@ -9,7 +9,7 @@ const Home = () => {
     const [src, setSrc] = useState([])
     const [hover, setHover] = useState(null)
     const [offset, setOffset] = useState(0)
-    const [limit, setLimit] = useState(10)
+    const [limit, setLimit] = useState(25)
 
 const {details, setDetails}=useDetailContext()
 
@@ -101,9 +101,9 @@ console.log("loading")
                 }
 
             </div>
-            <div className='flex justify-center gap-10 py-10'> <button onClick={gotoPrevious} className={` bg-gray-300 px-5 py-2 rounded-md `} >Previous</button>
+            {/* <div className='flex justify-center gap-10 py-10'> <button onClick={gotoPrevious} className={` bg-gray-300 px-5 py-2 rounded-md `} >Previous</button>
             <button onClick={gotoNext} className='bg-gray-300 px-9 py-2 rounded-md '>Next</button>
-            </div>
+            </div> */}
 
         </div>
     )
