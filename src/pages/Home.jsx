@@ -86,7 +86,7 @@ console.log("loading")
                         <div onMouseEnter={() => setHover(index)} onMouseLeave={() => setHover(false)} className='w-64 h-64  '>
 
                             {hover === index ? <div  className='border rounded-md w-full h-full flex flex-col justify-center gap-5 items-center '>
-                                {item.comics.items.length > 0 && <Link  onClick={() => handleContext(item)} to='/details' className='px-10 rounded-md t py-2 bg-red-100 font-semibold'>View More</Link>}
+                                <Link  onClick={() => handleContext(item)} to='/details' className='px-10 rounded-md t py-2 bg-red-100 font-semibold'>View More</Link>
 
                             </div> :
                                 <div >
