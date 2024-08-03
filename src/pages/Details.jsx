@@ -6,7 +6,6 @@ const Details = () => {
 
   const { details, setDetails } = useDetailContext()
 
-  console.log(details)
   return (
     <div>
 

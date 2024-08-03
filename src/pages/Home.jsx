@@ -1,6 +1,5 @@
 import { useContext, useEffect, useState } from 'react'
 import md5 from 'md5'
-import Item from '../components/Item'
 import { Link } from 'react-router-dom'
 import { useDetailContext } from '../contexts/DetailContext'
 
@@ -16,7 +15,6 @@ const {details, setDetails}=useDetailContext()
 
     const loadData = async () => {
 setSrc([])
-console.log("loading")
         // Define your keys
         const publicKey = 'f8b8617dc4a041208090e77aa4da21ae';
         const privateKey = 'f52a938e7a2c382e63c509a906b58429971d81b9';
@@ -66,7 +64,6 @@ console.log("loading")
         setOffset(start)
         setLimit(end)
         loadData()
-        console.log("here"+ offset + limit)
     }
 
     const gotoPrevious= ()=>{
